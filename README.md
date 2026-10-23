@@ -4,6 +4,20 @@ An AI-powered, browser-based object detection application that uses YOLOv8n and 
 
 ## 🚀 Live Demo
 
+## 📸 Screenshots
+
+### Dashboard
+
+![VisionDetect AI Dashboard](public/Screenshots/dashboard.png)
+
+### Object Detection Results
+
+![VisionDetect AI Detection Results](public/Screenshots/detection-results.png)
+
+### Detection Example
+
+![VisionDetect AI Detection Example](public/Screenshots/detection-example.png)
+
 **[Try VisionDetect AI](https://akanchibail.github.io/visiondetect-ai/)**
 
 ## ✨ Features
