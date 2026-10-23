@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-secondary-fixed": "#0f0069", "inverse-primary": "#b4c5ff", "surface-bright": "#faf8ff", "on-surface-variant": "#434655", "on-error-container": "#93000a", "on-primary-fixed": "#00174b", "secondary": "#4b41e1", "surface-container-highest": "#dae2fd", "secondary-fixed": "#e2dfff", "on-background": "#131b2e", "primary-fixed": "#dbe1ff", "surface-container": "#eaedff", "tertiary": "#006058", "on-primary-container": "#eeefff", "inverse-on-surface": "#eef0ff", "secondary-container": "#645efb", "surface-variant": "#dae2fd", "on-secondary": "#ffffff", "surface-dim": "#d2d9f4", "on-primary": "#ffffff", "tertiary-fixed": "#89f5e7", "surface-container-high": "#e2e7ff", "on-tertiary-fixed": "#00201d", "surface-container-lowest": "#ffffff", "surface": "#faf8ff", "primary-container": "#2563eb", "outline-variant": "#c3c6d7", "on-tertiary-fixed-variant": "#005049", "on-tertiary": "#ffffff", "on-tertiary-container": "#b3fff3", "inverse-surface": "#283044", "primary": "#004ac6", "on-primary-fixed-variant": "#003ea8", "on-surface": "#131b2e", "surface-tint": "#0053db", "tertiary-container": "#007b71", "surface-container-low": "#f2f3ff", "on-secondary-container": "#fffbff", "error": "#ba1a1a", "tertiary-fixed-dim": "#6bd8cb", "on-secondary-fixed-variant": "#3323cc", "secondary-fixed-dim": "#c3c0ff", "primary-fixed-dim": "#b4c5ff", "outline": "#737686", "error-container": "#ffdad6", "background": "#faf8ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter": "1.25rem", "margin": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["JetBrains Mono"], "body-sm": ["Inter"], "label-lg": ["JetBrains Mono"] }, "fontSize": { "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-gutter"><div class="flex items-center gap-6"><div class="flex items-center gap-3"><img alt="VisionDetect AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBnJopeR4Ikc_HRCodPO9z6EPRJdJ9zoJsIXadUNcJsSTYw2iWQqjCDzTVBPiVeij7IJLxhd_vrNspgV0ZkEHUvNBRIs7xP2icWSOQewq7UFJMBI9s9OFNnrucqxHC8G0PBRCTN2r0UWvAcO0i_uDorKb_vdFwTl8WEprlVbJWNvHLhY5xpXWN_YoonLPpIe19d9-KFg6e6zwEPO9DOdwXuJJOIHRLruzrfhxvcbeq0Ik_0Ec7wbgh4Q"/><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">VisionDetect AI</span><span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div><nav class="hidden md:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a aria-current="page" class="px-3 py-1.5 rounded transition-colors bg-primary-container text-on-primary font-semibold" data-path="detector" href="#">Detector</a><a class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about" href="#">About</a><a class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="model-info" href="#">Model Info</a></nav></div><div class="flex items-center gap-4"><div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-outline-variant"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant">Model Ready (YOLOv8x / GPU CUDA:0)</span></div><div class="hidden sm:flex items-center gap-4 text-on-surface-variant"><a class="font-body-sm text-body-sm hover:text-primary transition-colors" data-path="docs" href="#">Docs</a><a class="font-body-sm text-body-sm hover:text-primary transition-colors" data-path="github" href="#">GitHub</a></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Gradient Backdrop Underlay -->
+<div class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 py-8 flex flex-col gap-8">
+<!-- Top Hero Section: Concise, impactful CV Workspace banner -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="max-w-3xl space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-medium shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">neurology</span>
+<span>Ultralytics YOLOv8x Inference Engine</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface-variant">Live Session</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          See What's in Your Image
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Upload an image to detect objects, visualize bounding boxes, and explore model confidence scores in real-time with sub-40ms neural processing.
+        </p>
+</div>
+<!-- Feature Pill Badges -->
+<div class="flex flex-wrap sm:flex-nowrap gap-3 items-center">
+<div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">category</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">80+ Classes</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">COCO Dataset</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">Confidence</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Precision Calibrated</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">Sub-40ms</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">CUDA TensorRT</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workspace: 2-Column Asymmetric Layout (5 cols / 7 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- ================= COLUMN 1: Inputs & Settings (5 cols) ================= -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- CARD 1: Image Upload (Gradio Style) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">add_photo_alternate</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Source Image Input</span>
+</div>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">
+              JPG, PNG • Max 25MB
+            </span>
+</div>
+<!-- Drag and Drop Dropzone -->
+<div class="relative group cursor-pointer rounded-xl bg-surface-container-low hover:bg-surface-container p-6 transition-all duration-200 flex flex-col items-center justify-center text-center gap-3" id="dropzone">
+<input accept="image/png, image/jpeg, image/webp" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full z-10" id="file-input" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<div class="space-y-1">
+<p class="font-headline-sm text-headline-sm text-on-surface">
+                Drop your image here or browse files
+              </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                High resolution landscape or street views yield optimal detections
+              </p>
+</div>
+<button class="mt-1 px-4 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm shadow-sm group-hover:bg-primary group-hover:text-on-primary transition-colors" type="button">
+              Browse Local Disk
+            </button>
+</div>
+<!-- Sample Selectors -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Try Sample Images</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="sample-btn px-2.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm transition" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Urban Street</span>
+</button>
+<button class="sample-btn px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1 transition" type="button">
+<span>Living Room</span>
+</button>
+<button class="sample-btn px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1 transition" type="button">
+<span>Office Desk</span>
+</button>
+</div>
+</div>
+<!-- Primary & Secondary Actions -->
+<div class="flex items-center gap-3 pt-2">
+<button class="flex-1 py-2.5 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-headline-sm shadow-md flex items-center justify-center gap-2 transition duration-150" id="detect-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">radar</span>
+<span>Detect Objects</span>
+</button>
+<button class="py-2.5 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm transition flex items-center justify-center gap-1" id="clear-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Detection Settings & Overlays -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Model Parameters</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Active Pipeline
+            </span>
+</div>
+<!-- Slider 1: Confidence Threshold -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="font-body-md text-body-md text-on-surface font-medium" for="conf-slider">Confidence Threshold</label>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-surface-container text-primary font-semibold" id="conf-val">0.25 (Default)</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="conf-slider" max="95" min="5" type="range" value="25"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>More detections (0.05)</span>
+<span>Stricter (0.95)</span>
+</div>
+</div>
+<!-- Slider 2: IoU Overlap -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="font-body-md text-body-md text-on-surface font-medium" for="iou-slider">IoU / NMS Suppression</label>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold" id="iou-val">0.45</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="iou-slider" max="90" min="10" type="range" value="45"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Aggressive merge</span>
+<span>Separate overlaps</span>
+</div>
+</div>
+<!-- Toggles Row -->
+<div class="pt-2 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Canvas Overlays</span>
+<!-- Toggle 1 -->
+<label class="flex items-center justify-between cursor-pointer select-none">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">crop_square</span>
+<span class="font-body-md text-body-md text-on-surface">Show Bounding Boxes</span>
+</div>
+<input checked="" class="sr-only peer" id="toggle-boxes" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary relative"></div>
+</label>
+<!-- Toggle 2 -->
+<label class="flex items-center justify-between cursor-pointer select-none">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">label</span>
+<span class="font-body-md text-body-md text-on-surface">Show Labels &amp; Confidence</span>
+</div>
+<input checked="" class="sr-only peer" id="toggle-labels" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary relative"></div>
+</label>
+<!-- Toggle 3 -->
+<label class="flex items-center justify-between cursor-pointer select-none">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">palette</span>
+<span class="font-body-md text-body-md text-on-surface">Class Color Coding</span>
+</div>
+<input checked="" class="sr-only peer" id="toggle-colors" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary relative"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- ================= COLUMN 2: Results, Metrics & Telemetry (7 cols) ================= -->
+<div class="lg:col-span-7 flex flex-col gap-gutter">
+<!-- CARD 3: Annotated Visual Output Viewport -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">view_in_ar</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Detection Viewport</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">14 Predictions</span>
+</div>
+<!-- View Switcher -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container font-label-md text-label-md">
+<button class="px-3 py-1 rounded-md bg-surface-container-lowest text-primary font-semibold shadow-sm transition" id="view-annotated">
+                Annotated Result
+              </button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface transition" id="view-original">
+                Original Image
+              </button>
+</div>
+</div>
+<!-- Visual Canvas Wrapper with SVG Bounding Box Overlays -->
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-inverse-surface shadow-inner group select-none flex items-center justify-center">
+<!-- Source Image -->
+<img alt="Urban street scene with detected pedestrians, bicycles, and cars" class="w-full h-full object-cover transition-opacity duration-200" id="main-viewport-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-e_WsT17ZmM_KuSDZ06yu1xyLauC_pBC51Anvk4Y_aXW6vlt8uwClP-fssuhfFsWUgWsRmD1MESMGw9jMcaPCOwRqwHGYY2eLTQ7od2xc6ig57WNyoTFkxQ-IUv6bsqMcI3RnSWdRNhAfKoW2hulQvPgvT3P-QlCtt5ZeokKFPgnsnsuqZBWZ4zwBmRmbmcBqvKTljFxryLAFaiBF_WJdLxrY3zcKSh4TtrTO25W6CEbxZ-HEFAPp"/>
+<!-- Interactive Bounding Boxes Layer -->
+<div class="absolute inset-0 pointer-events-none transition-opacity duration-200" id="annotations-layer">
+<!-- BOX 1: Person 1 (Blue - Walking pedestrian left) -->
+<div class="absolute box-elem" style="left: 14%; top: 28%; width: 11%; height: 52%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#2563EB] bg-[#2563EB]/15 relative">
+<!-- Reticles -->
+<span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#2563EB]"></span>
+<span class="absolute -bottom-1 -right-1 w-2 h-2 border-b-2 border-r-2 border-[#2563EB]"></span>
+<!-- Pill Label -->
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#2563EB] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>person</span>
+<span class="opacity-90">0.94</span>
+</div>
+</div>
+</div>
+<!-- BOX 2: Person 2 (Blue - Walking pedestrian center) -->
+<div class="absolute box-elem" style="left: 31%; top: 32%; width: 10%; height: 48%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#2563EB] bg-[#2563EB]/15 relative">
+<span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#2563EB]"></span>
+<span class="absolute -bottom-1 -right-1 w-2 h-2 border-b-2 border-r-2 border-[#2563EB]"></span>
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#2563EB] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>person</span>
+<span class="opacity-90">0.91</span>
+</div>
+</div>
+</div>
+<!-- BOX 3: Bicycle (Emerald - Foreground road bike) -->
+<div class="absolute box-elem" style="left: 4%; top: 58%; width: 18%; height: 35%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#059669] bg-[#059669]/15 relative">
+<span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#059669]"></span>
+<span class="absolute -bottom-1 -right-1 w-2 h-2 border-b-2 border-r-2 border-[#059669]"></span>
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#059669] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>bicycle</span>
+<span class="opacity-90">0.89</span>
+</div>
+</div>
+</div>
+<!-- BOX 4: Car (Amber - Road car crosswalk) -->
+<div class="absolute box-elem" style="left: 54%; top: 40%; width: 32%; height: 38%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#D97706] bg-[#D97706]/15 relative">
+<span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#D97706]"></span>
+<span class="absolute -bottom-1 -right-1 w-2 h-2 border-b-2 border-r-2 border-[#D97706]"></span>
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#D97706] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>car</span>
+<span class="opacity-90">0.96</span>
+</div>
+</div>
+</div>
+<!-- BOX 5: Chair (Purple - Outdoor seating chair) -->
+<div class="absolute box-elem" style="left: 88%; top: 56%; width: 9%; height: 28%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#7C3AED] bg-[#7C3AED]/15 relative">
+<span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#7C3AED]"></span>
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#7C3AED] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>chair</span>
+<span class="opacity-90">0.82</span>
+</div>
+</div>
+</div>
+<!-- BOX 6: Dining Table (Cyan - Cafe outdoor table) -->
+<div class="absolute box-elem" style="left: 77%; top: 62%; width: 14%; height: 26%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#0891B2] bg-[#0891B2]/15 relative">
+<span class="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-[#0891B2]"></span>
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#0891B2] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>table</span>
+<span class="opacity-90">0.78</span>
+</div>
+</div>
+</div>
+<!-- BOX 7: Backpack (Rose - On pedestrian) -->
+<div class="absolute box-elem" style="left: 23%; top: 38%; width: 6%; height: 16%;">
+<div class="w-full h-full rounded-[2px] border-2 border-[#E11D48] bg-[#E11D48]/20 relative">
+<div class="box-label absolute -top-5 left-0 px-1.5 py-0.2 rounded-t font-label-sm text-[10px] bg-[#E11D48] text-white flex items-center gap-1 leading-tight tracking-tight shadow">
+<span>backpack</span>
+<span class="opacity-90">0.85</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Viewport Bottom HUD Bar -->
+<div class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface flex items-center justify-between font-label-sm text-label-sm pointer-events-auto">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1 text-tertiary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span> 1376 × 768 px
+                </span>
+<span class="opacity-60">|</span>
+<span>YOLOv8x FP16</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:text-primary-fixed transition flex items-center gap-1" title="Toggle zoom">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span> 100%
+                </button>
+</div>
+</div>
+</div>
+<!-- Canvas Utility Actions -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Overlay</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition" id="copy-json-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">data_object</span>
+<span>Copy JSON</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> Device: NVIDIA RTX 4090
+            </span>
+</div>
+</div>
+<!-- CARD 4: Detection Summary & Metrics Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Inference Telemetry</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-fixed-dim text-on-tertiary-fixed font-semibold">Real-time Batch #1</span>
+</div>
+<!-- 4 Stat Metric Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Detected</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">14</span>
+<span class="font-label-sm text-label-sm text-tertiary">+2 low-conf</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Boxes over 0.25</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Unique Classes</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">of 80</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Active categories</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Inference</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">28.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ms</span>
+</div>
+<span class="font-body-sm text-[11px] text-tertiary font-medium">GPU TensorRT</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Mean Conf</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">87.6</span>
+<span class="font-label-sm text-label-sm text-primary">%</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">High precision</span>
+</div>
+</div>
+<!-- Class Distribution Chips -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider block">Class Breakdown</span>
+<div class="flex flex-wrap gap-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-800 font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#2563EB]"></span>
+<span class="font-medium">Person:</span>
+<span class="font-bold">6</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-purple-800 font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#7C3AED]"></span>
+<span class="font-medium">Chair:</span>
+<span class="font-bold">4</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 text-amber-800 font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#D97706]"></span>
+<span class="font-medium">Car:</span>
+<span class="font-bold">1</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#059669]"></span>
+<span class="font-medium">Bicycle:</span>
+<span class="font-bold">1</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-50 text-cyan-800 font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#0891B2]"></span>
+<span class="font-medium">Dining Table:</span>
+<span class="font-bold">1</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 text-rose-800 font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#E11D48]"></span>
+<span class="font-medium">Backpack:</span>
+<span class="font-bold">1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 5: Detailed Detection Telemetry Table -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">table_rows</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Object Detection Telemetry</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Top 7 of 14</span>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg">#</th>
+<th class="py-2.5 px-3">Class</th>
+<th class="py-2.5 px-3">Confidence</th>
+<th class="py-2.5 px-3">Bounding Box [x1, y1, x2, y2]</th>
+<th class="py-2.5 px-3 rounded-r-lg">Area (px²)</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1: Car -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">01</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#D97706]"></span>
+<span>Car</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#D97706] rounded-full" style="width: 96%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">96.2%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[743, 307, 1183, 599]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">128,480</td>
+</tr>
+<!-- Row 2: Person 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">02</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#2563EB]"></span>
+<span>Person</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#2563EB] rounded-full" style="width: 94%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">94.1%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[192, 215, 344, 614]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">60,648</td>
+</tr>
+<!-- Row 3: Person 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">03</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#2563EB]"></span>
+<span>Person</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#2563EB] rounded-full" style="width: 91%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">91.4%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[426, 245, 564, 614]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">50,922</td>
+</tr>
+<!-- Row 4: Bicycle -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">04</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#059669]"></span>
+<span>Bicycle</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#059669] rounded-full" style="width: 89%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">89.0%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[55, 445, 302, 714]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">66,443</td>
+</tr>
+<!-- Row 5: Backpack -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">05</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#E11D48]"></span>
+<span>Backpack</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#E11D48] rounded-full" style="width: 85%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">85.3%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[316, 291, 399, 414]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">10,209</td>
+</tr>
+<!-- Row 6: Chair -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">06</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#7C3AED]"></span>
+<span>Chair</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#7C3AED] rounded-full" style="width: 82%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">82.1%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[1210, 430, 1334, 645]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">26,660</td>
+</tr>
+<!-- Row 7: Dining Table -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-label-sm text-on-surface-variant font-medium">07</td>
+<td class="py-2.5 px-3 font-medium text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#0891B2]"></span>
+<span>Dining Table</span>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-[#0891B2] rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">78.4%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface-variant">[1059, 476, 1252, 675]</td>
+<td class="py-2.5 px-3 font-label-sm text-label-sm text-on-surface">38,407</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Compact Table Footer -->
+<div class="flex items-center justify-between pt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 7 of 14 detections above 0.25 conf</span>
+<button class="font-headline-sm text-headline-sm text-primary hover:underline flex items-center gap-1">
+<span>View all 14 records</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript logic for toggles and UI responsiveness -->
+<script>
+    (function initVisionWorkspace() {
+      // Sliders reactive badges
+      const confSlider = document.getElementById('conf-slider');
+      const confVal = document.getElementById('conf-val');
+      if (confSlider && confVal) {
+        confSlider.addEventListener('input', (e) => {
+          const val = (e.target.value / 100).toFixed(2);
+          confVal.textContent = val + (val === '0.25' ? ' (Default)' : '');
+        });
+      }
+
+      const iouSlider = document.getElementById('iou-slider');
+      const iouVal = document.getElementById('iou-val');
+      if (iouSlider && iouVal) {
+        iouSlider.addEventListener('input', (e) => {
+          iouVal.textContent = (e.target.value / 100).toFixed(2);
+        });
+      }
+
+      // View switcher (Annotated vs Original)
+      const viewAnnotated = document.getElementById('view-annotated');
+      const viewOriginal = document.getElementById('view-original');
+      const annotationsLayer = document.getElementById('annotations-layer');
+
+      if (viewAnnotated && viewOriginal && annotationsLayer) {
+        viewAnnotated.addEventListener('click', () => {
+          viewAnnotated.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+          viewAnnotated.classList.remove('text-on-surface-variant');
+          viewOriginal.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+          viewOriginal.classList.add('text-on-surface-variant');
+          annotationsLayer.style.opacity = '1';
+        });
+
+        viewOriginal.addEventListener('click', () => {
+          viewOriginal.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+          viewOriginal.classList.remove('text-on-surface-variant');
+          viewAnnotated.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+          viewAnnotated.classList.add('text-on-surface-variant');
+          annotationsLayer.style.opacity = '0';
+        });
+      }
+
+      // Bounding box toggle
+      const toggleBoxes = document.getElementById('toggle-boxes');
+      if (toggleBoxes && annotationsLayer) {
+        toggleBoxes.addEventListener('change', (e) => {
+          const boxes = annotationsLayer.querySelectorAll('.box-elem');
+          boxes.forEach(box => {
+            box.style.display = e.target.checked ? 'block' : 'none';
+          });
+        });
+      }
+
+      // Labels toggle
+      const toggleLabels = document.getElementById('toggle-labels');
+      if (toggleLabels && annotationsLayer) {
+        toggleLabels.addEventListener('change', (e) => {
+          const labels = annotationsLayer.querySelectorAll('.box-label');
+          labels.forEach(lbl => {
+            lbl.style.display = e.target.checked ? 'flex' : 'none';
+          });
+        });
+      }
+
+      // Copy JSON button micro-interaction
+      const copyBtn = document.getElementById('copy-json-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          const originalHTML = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-tertiary">check</span><span>Copied!</span>';
+          setTimeout(() => {
+            copyBtn.innerHTML = originalHTML;
+          }, 1800);
+        });
+      }
+
+      // Sample image selector interaction
+      const sampleButtons = document.querySelectorAll('.sample-btn');
+      sampleButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          sampleButtons.forEach(b => {
+            b.className = 'sample-btn px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1 transition';
+            const checkIcon = b.querySelector('.material-symbols-outlined');
+            if (checkIcon) checkIcon.remove();
+          });
+          btn.className = 'sample-btn px-2.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm transition';
+          const icon = document.createElement('span');
+          icon.className = 'material-symbols-outlined text-[14px]';
+          icon.textContent = 'check';
+          btn.prepend(icon);
+        });
+      });
+
+      // Detect button pulse effect
+      const detectBtn = document.getElementById('detect-btn');
+      if (detectBtn) {
+        detectBtn.addEventListener('click', () => {
+          detectBtn.classList.add('scale-[0.98]');
+          setTimeout(() => detectBtn.classList.remove('scale-[0.98]'), 150);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant py-8"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex flex-col gap-1 text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface font-semibold">Powered by Ultralytics YOLO and Gradio.</p><p class="font-label-sm text-label-sm text-on-surface-variant">Predictions depend on image quality, resolution, and threshold settings.</p></div><nav class="flex flex-wrap items-center justify-center gap-6"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="github-repository" href="#">GitHub Repository</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="documentation" href="#">Documentation</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="api-reference" href="#">API Reference</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="ultralytics-docs" href="#">Ultralytics Docs</a></nav></div></footer></body></html>

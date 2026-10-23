@@ -1,0 +1,6 @@
+{
+  "name": "VisionDetect AI",
+  "description": "AI-powered image object detection web application with Ultralytics YOLOv8, Gradio UI, and Hugging Face Spaces deployment hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

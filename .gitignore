@@ -1,0 +1,21 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Python virtual environment and cache
+python/.venv/
+python/__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Large Python model weights
+python/*.pt
+python/*.onnx
+
+# Nested older project with its own Git repository
+/visiondetect-ai/
