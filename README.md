@@ -1,74 +1,101 @@
 # VisionDetect AI
 
-VisionDetect AI is a browser-based object detection dashboard built with React, TypeScript, Vite, and YOLOv8n. It uses ONNX Runtime Web to run object detection directly in the browser.
+An AI-powered, browser-based object detection application that uses YOLOv8n and ONNX Runtime Web to identify objects in images and visualize detections with bounding boxes, class labels, and confidence scores.
 
-## Features
+## 🚀 Live Demo
 
-- Upload images for object detection.
-- Visualize detected objects with bounding boxes and class labels.
-- View confidence scores, object counts, class breakdowns, and bounding-box coordinates.
-- Adjust confidence and Intersection over Union (IoU) thresholds.
-- Review detection telemetry, including inference time.
-- Explore the sample images and dashboard interface.
+**[Try VisionDetect AI](https://akanchibail.github.io/visiondetect-ai/)**
 
-## Technology Stack
+## ✨ Features
 
-- React and TypeScript
-- Vite
-- ONNX Runtime Web
-- YOLOv8n ONNX model
-- Tailwind CSS
+- **Real-time browser inference:** Run object detection directly in the browser without requiring a separate inference server.
+- **YOLOv8n model:** Detect common objects using a pretrained YOLO model in ONNX format.
+- **Visual detection results:** Display bounding boxes and labels around detected objects.
+- **Confidence scores:** View model confidence for detected objects.
+- **Multiple object classes:** Identify supported categories such as people, vehicles, and everyday objects.
+- **Interactive dashboard:** Upload images and explore the detection results through a user-friendly interface.
+- **Client-side processing:** Perform inference in the browser using WebAssembly through ONNX Runtime Web.
 
-## How It Works
+## 🛠️ Tech Stack
 
-For uploaded images, the application preprocesses the image in the browser and runs the YOLOv8n ONNX model using WebAssembly. The model predictions are processed and displayed as bounding boxes and telemetry.
+| Technology | Purpose |
+|---|---|
+| React | User interface |
+| TypeScript | Application logic and type safety |
+| Vite | Development server and production build |
+| YOLOv8n | Object detection model |
+| ONNX Runtime Web | Browser-based model inference |
+| WebAssembly (WASM) | Model execution in the browser |
+| GitHub Actions | Automated build and deployment |
+| GitHub Pages | Static website hosting |
 
-Sample images may display predefined demonstration results. Upload an image and run detection to test real model inference.
+## ⚙️ How It Works
 
-## Run Locally
+1. The user uploads an image through the application.
+2. The image is preprocessed into the format expected by the model.
+3. The YOLOv8n ONNX model performs inference in the browser.
+4. The application processes the model predictions and identifies detected objects.
+5. Bounding boxes, class labels, and confidence scores are displayed over the image.
+
+## 💻 Run Locally
 
 ### Prerequisites
 
 - Node.js and npm
-- A modern browser
+- Git
 
 ### Installation
 
-Clone the repository and enter the project directory:
+1. Clone the repository:
 
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd visiondetect-ai
-npm install
-npm run dev
-```
+   ```bash
+   git clone https://github.com/Akanchibail/visiondetect-ai.git
+   ```
 
-Open the local URL printed by Vite in your terminal.
+2. Navigate to the project directory:
+
+   ```bash
+   cd visiondetect-ai
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL shown in your terminal.
 
 ### Production Build
 
-To create a production build:
+To generate a production build, run:
 
 ```bash
 npm run build
 ```
 
-The generated files are placed in the `dist` directory.
+The production files will be generated in the `dist/` directory.
 
-## Model File
+## 🌐 Deployment
 
-The browser detector loads the YOLOv8n ONNX model from:
+The application is hosted on GitHub Pages. GitHub Actions automatically builds the Vite application and deploys the generated static files when changes are pushed to the `main` branch.
 
-`public/models/yolov8n.onnx`
+The object detection model runs in the browser, so the deployed frontend does not require a dedicated model inference server.
 
-Keep this file in place when running or deploying the browser-based detector.
+## 📂 Repository
 
-## Notes
+[View the source code on GitHub](https://github.com/Akanchibail/visiondetect-ai)
 
-- Browser inference performance depends on the device and browser.
-- The current browser inference implementation supports YOLOv8n.
-- The Python directory contains supporting experimentation and model-related files; the browser detector does not require the Python virtual environment.
+## 🎯 Project Objective
 
-## License
+This project demonstrates the integration of computer vision and web development to deliver an accessible AI application. It explores model integration, browser-based machine learning inference, image preprocessing, prediction visualization, and automated deployment.
 
-Add a license before redistributing this project or its model weights. Check the applicable licenses for the source code, dependencies, and model.
+---
+
+**Built by Akshay Kanchibail**
