@@ -6,7 +6,9 @@ let sessionPromise: Promise<ort.InferenceSession> | null = null;
 
 function getSession(): Promise<ort.InferenceSession> {
   if (!sessionPromise) {
-    sessionPromise = ort.InferenceSession.create('/models/yolov8n.onnx', {
+    sessionPromise = ort.InferenceSession.create(
+        `${import.meta.env.BASE_URL}models/yolov8n.onnx`,
+        {
       executionProviders: ['wasm'],
     }).catch((error) => {
       sessionPromise = null;
